@@ -18,7 +18,8 @@ func main() {
 	question := readQuestions("Test.csv")
 	total, correct := renderQues(question)
 	fmt.Println("You attemted: ", total, "\n", "Correct ans: ", correct)
-	add(1, 2)
+	result := add(1, 2)
+	fmt.Println("ouptput of add:", result)
 }
 
 func add(no int, no1 int) int {
